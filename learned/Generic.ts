@@ -6,7 +6,6 @@
 // 제네릭이란 타입을 마치 함수의 파라미터처럼 사용하는 것을 의미합니다. */
 // 일반적인 함수 
 function gettextg(text) {
-     return text;
 }
 gettextg('hi');      // 'hi'
 gettextg(10)      // 10
