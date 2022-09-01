@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example html</title>
+</head>
+
+<body>
+
+
+	<custom-input name='123'></custom-input>
+
+
+	<script>
+		// vanila js로 react 처럼 component 형식으로 web 구성하는 법
+		class CustomInput extends HTMLElement {
+			connectedCallback() {    // 웹페이지와 연결되었을 때, customInput class 실행시, callback되는 함수
+				this.render();
+			}
+
+			render() {     // componet 표시해줄 함수 생성
+				let label = document.createElement('label');
+				label.innerHTML = 'put your name';
+				this.appendChild(label);
+
+				let input = document.createElement('input');
+				this.appendChild(input);
+			}
+
+			// 자동 HTML 재 랜더링 기능 구현
+			static get observedAttributes() {   // 아래 return 내의 attribute가 바뀌는지 감시해주세요~
+				return ['name']
+			}
+
+			attributeChangedCallback() {    //바뀔경우 이거 실행됨.
+				this.render(); // 웹페이지 return attribute 속성 값 변경시 , this.render()함수를 호출해, web page 재 랜더링 해줌.
+			}
+		}
+		customElements.define('custom-input', CustomInput)
+	</script>
+
+
+</body>
+
+</html>
