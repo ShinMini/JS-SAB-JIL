@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>step2</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+   <h3 class="border">eval() 함수</h3>
+   <p>주의사항 : parameter로 유입되는 문자열들을 따옴표 제거 후에 로직으로 처리 해 버림.</p>
+   <p>해킹 즉, 악의적인 코드를 심어 넣기에 적합한 함수.</p>
+   <p>가급적 사용 X, json 포멧 구성시에도 단일 따옴표가 아닌 큰 따옴표 사용 권장.</p>
+
+   <script>
+      document.write("1+2");
+      document.write("<br>");
+      document.write(eval("1+2"));
+      document.write("<br>");
+
+      eval(document.write('브라우저에 출력될까요?')); // 코드로 실행 브라우저에 출력 
+
+      document.write("<br>");
+      "document.write('브라우저에 출력될까요????')";  // 단순 문자열
+
+      // 단순 문자열을 로직으로 처리 따라서 브라우저에 출력
+      eval("document.write('브라우저에 출력될까요????');"); 
+   </script>
+
+   <p>hi there</p>
+
+
+</body>
+
+</html>

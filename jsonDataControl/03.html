@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>03html</title>
+   <style>
+      body {
+         padding-left: 20px;
+      }
+
+      h1 {
+         font-size: 40px;
+      }
+
+      .border {
+         border: 0;
+         border-bottom: 3px solid gray;
+         padding: 5px 0 30px 30px;
+         margin-bottom: 50px;
+      }
+
+      .inputDiv input {
+         width: 300px;
+         height: 50px;
+         margin-bottom: 25px;
+
+         border-radius: 10px;
+         font-size: 2em;
+
+         color: gray;
+         background-color: rgb(167, 243, 240);
+
+         border: 0;
+         border-right: 5px solid rgb(127, 213, 220);
+         border-bottom: 7px solid rgb(107, 193, 190);
+
+         text-align: center;
+      }
+
+      .btnDiv {
+         display: flex;
+         flex-direction: column;
+
+      }
+
+      .btnDiv button {
+         margin-top: 25px;
+         width: 300px;
+         height: 60px;
+
+         font-size: 1.5em;
+         border-radius: 10px;
+
+         border: 0;
+         border-right: 5px solid rgb(57, 63, 50);
+         border-bottom: 7px solid rgb(57, 33, 40);
+
+         transition-duration: 300ms;
+      }
+
+      .btnDiv button:hover {
+         border-right: 1px solid rgb(57, 63, 50);
+         border-bottom: 2px solid rgb(57, 33, 40);
+
+         color: white;
+      }
+
+      .btnDiv button:nth-child(1) {
+         background-color: rgb(230, 180, 180);
+      }
+
+      .btnDiv button:nth-child(2) {
+         background-color: rgb(159, 159, 226);
+      }
+
+      .btnDiv button:nth-child(3) {
+         background-color: rgb(219, 219, 113);
+      }
+
+      .btnDiv button:nth-child(4) {
+         background-color: rgb(104, 187, 104);
+      }
+   </style>
+</head>
+
+<body>
+   <h1 class="border">JSON Data Control</h1>
+
+   <div class="inputDiv">
+      <input type="text" placeholder="name" id="one"><br>
+      <input type="text" placeholder="age" id="two"><br>
+   </div>
+   <div class="btnDiv">
+      <button id="btn1" onClick="printInfo(0)">Print Info.1</button>
+      <button id="btn2" onClick="printInfo(1)">Print Yeona Info.2</button>
+      <button id="btn3" onClick="printInfo(2)">Print milla Info.3</button>
+      <button id="btn4" onClick="printInfo(3)">Print Hyeon min Info.4</button>
+   </div>
+
+   <script>
+      let people = [
+         { "name": "Jonson", "age": 43 },
+         { "name": "Yeona", "age": 21 },
+         { "name": "Milla", "age": 30 },
+         { "name": "Hyeon min", "age": 19 }
+      ]
+
+      function printInfo(no) {
+         document.getElementById("one").value = people[no].name;
+         document.getElementById("two").value = people[no].age;
+      }
+   </script>
+</body>
+
+</html>
