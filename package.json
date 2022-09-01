@@ -1,0 +1,29 @@
+{
+  "name": "step10_js",
+  "version": "1.0.0",
+  "description": "0901 practice / playdata",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinMini/Study-JS.git"
+  },
+  "keywords": [
+    "ts-study"
+  ],
+  "author": "ShinMini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShinMini/Study-JS/issues"
+  },
+  "homepage": "https://github.com/ShinMini/Study-JS#readme",
+  "dependencies": {
+    "react-router-dom": "^6.3.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.14"
+  }
+}
