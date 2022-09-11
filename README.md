@@ -11,5 +11,8 @@
 
 5. [최종 응용 -> web site 만들어보기](./foodTemplate/foodTemplate.html)
 
+* 기본 사이트 구조
 ![foodTemplate](./imgs/basic.png)
+
+* 사이드 바 클릭시
 ![foodTemplate_sidebar](./imgs/sidebar.png)
