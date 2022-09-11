@@ -1,4 +1,4 @@
-front 개발 언어
+# front 개발 언어
 
 1. 종류
 	html
@@ -18,7 +18,7 @@ front 개발 언어
 	
 	
 	
-*** Java Script ***
+## Java Script
 
 1. 구성
 	1. 변수 - 데이터

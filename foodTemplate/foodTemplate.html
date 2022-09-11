@@ -12,8 +12,6 @@
 
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
    <style>
       body,
       h1,
@@ -35,16 +33,11 @@
 
       i {
          transition-duration: 300ms;
-         color: rgb(219, 194, 194);
-      }
-
-      p {
-         font-family: 'Roboto', sans-serif;
+         color: gray;
       }
 
       .rotate {
          transform: rotate(0.5turn);
-         color: rgb(220, 140, 240);
       }
    </style>
 </head>
@@ -81,13 +74,13 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(0)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(0)" style="font-size:48px;"></i>
          </div>
 
          <script>
             function Toggle(no) {
                document.getElementsByClassName("toggleDiv")[no].classList.toggle("toggle");
-               document.getElementsByClassName("fa-angle-double-down")[no].classList.toggle("rotate");
+               document.getElementById("down-arrow").classList.toggle("rotate");
             }
          </script>
 
@@ -99,7 +92,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(1)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(1)" style="font-size:48px;"></i>
          </div>
          <div class="w3-quarter">
             <img src="images/cherries.jpg" alt="Cherries" style="width:100%">
@@ -107,7 +100,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(2)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(2)" style="font-size:48px;"></i>
 
 
 
@@ -118,7 +111,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(3)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(3)" style="font-size:48px;"></i>
 
          </div>
       </div>
@@ -131,7 +124,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(4)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(4)" style="font-size:48px;"></i>
 
          </div>
          <div class="w3-quarter">
@@ -140,7 +133,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(5)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(5)" style="font-size:48px;"></i>
 
          </div>
          <div class="w3-quarter">
@@ -149,7 +142,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(6)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(6)" style="font-size:48px;"></i>
 
          </div>
          <div class="w3-quarter">
@@ -158,7 +151,7 @@
             <div class="toggleDiv toggle">
                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
             </div>
-            <i class="fa fa-angle-double-down" onclick="Toggle(7)" style="font-size:48px;"></i>
+            <i id="down-arrow" class="fa fa-angle-double-down" onclick="Toggle(7)" style="font-size:48px;"></i>
 
          </div>
       </div>
